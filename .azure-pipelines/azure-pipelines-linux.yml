@@ -13,7 +13,7 @@ jobs:
       linux_:
         CONFIG: linux_
         UPLOAD_PACKAGES: True
-        UPLOAD_ON_BRANCH: master
+        UPLOAD_ON_BRANCH: v0.11.5
         DOCKER_IMAGE: condaforge/linux-anvil-comp7
   steps:
   # configure qemu binfmt-misc running.  This allows us to run docker containers

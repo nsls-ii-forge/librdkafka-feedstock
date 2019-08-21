@@ -13,7 +13,7 @@ jobs:
       osx_:
         CONFIG: osx_
         UPLOAD_PACKAGES: True
-        UPLOAD_ON_BRANCH: master
+        UPLOAD_ON_BRANCH: v0.11.5
 
   steps:
   # TODO: Fast finish on azure pipelines?
