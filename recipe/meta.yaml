@@ -3,11 +3,10 @@
 {% set sha256 = "123b47404c16bcde194b4bd1221c21fdce832ad12912bd8074f88f64b2b86f2b" %}
 
 package:
-  name: {{ name }}
+  name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
   url: https://github.com/edenhill/{{ name }}/archive/v{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
@@ -52,8 +51,3 @@ about:
     delivery reliability and high performance in mind, current figures exceed 1
     million msgs/second for the producer and 3 million msgs/second for the
     consumer.
-
-extra:
-  recipe-maintainers:
-    - kwilcox
-    - stuarteberg
