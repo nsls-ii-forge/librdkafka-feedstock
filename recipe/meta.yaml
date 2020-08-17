@@ -19,17 +19,17 @@ requirements:
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
   host:
-    - zlib
-    - openssl
-    - libgsasl  # [not osx]
     - cyrus-sasl
+    - libgsasl  # [not osx]
     - lz4-c
+    - openssl
+    - zlib
   run:
-    - zlib
-    - openssl
-    - libgsasl  # [not osx]
     - cyrus-sasl
+    - libgsasl  # [not osx]
     - lz4-c
+    - openssl
+    - zlib
 
 test:
   commands:
@@ -41,7 +41,7 @@ test:
 
 about:
   home: https://github.com/edenhill/librdkafka
-  license: BSD 2-clause
+  license: BSD-2-clause
   license_family: BSD
   license_file: LICENSES.txt
   summary: The Apache Kafka C/C++ client library
