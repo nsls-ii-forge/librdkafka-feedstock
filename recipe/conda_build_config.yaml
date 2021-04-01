@@ -8,6 +8,8 @@ c_compiler_version:    # [linux]
   - 7                  # [linux]
 cxx_compiler_version:  # [linux]
   - 7                  # [linux]
+lz4_c:
+  - 1.9.2
 numpy:
   - 1.16
   - 1.16
